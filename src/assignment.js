@@ -14,9 +14,9 @@ const assignment = {};
  * @returns number the sum of the numbers
  */
 function sumOfNumbers(arrayOfNumbers) {
-     let sum = 0;
-    arrayOfNumbers.reduce((previousValue, currentValue) => previousValue + currentValue, sum)
-    return;
+  let sum = 0;
+  return arrayOfNumbers.reduce((previousValue, currentValue) => previousValue + currentValue, sum);
+    
 }
 
 
@@ -30,11 +30,11 @@ function sumOfNumbers(arrayOfNumbers) {
  * @returns number the count of even numbers
  */
 function countEvenNumbers(arrayOfNumbers) {
-    let sum = 0;
+     let sum = 0;
     let evenNum = arrayOfNumbers.filter((num) => {
-       return num%2 ===0;   
+       return num%2 ===0   
     })
-   return evenNum.reduce((previousValue, currentValue) => previousValue + currentValue, sum)
+   return evenNum.reduce((previousValue, currentValue) => previousValue + currentValue, sum) 
 }
 
 
